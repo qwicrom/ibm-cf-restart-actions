@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
   repository_dispatch:
   schedule:
-    - cron: 10 20 8,30 * *
+    - cron: 50 0 8,27 * *
 
 jobs:
   deploy:
