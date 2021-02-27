@@ -2,13 +2,13 @@ name: IBM Cloud Auto Restart
 
 env:
   IBM_CF_API: https://api.eu-gb.cf.cloud.ibm.com
-  IBM_CF_APP_MEM: 128M
+  IBM_CF_APP_MEM: 256M
 
 on:
   workflow_dispatch:
   repository_dispatch:
   schedule:
-    - cron: 10 20 1,16,29 * *
+    - cron: 10 20 8,30 * *
 
 jobs:
   deploy:
